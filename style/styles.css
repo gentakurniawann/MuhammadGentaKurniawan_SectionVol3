@@ -1,0 +1,1555 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #F6F8FD;
+}
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: #d9d9d9;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+header.sticky{
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s;
+}
+header.sticky .btn-masuk{
+    background: rgba(255, 255, 255, 0.9);
+}
+header.sticky .btn-masuk:hover{
+    color: #FFFFFF;
+    background-color: #2962FF;
+}
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+.hamburger{
+    display: none;
+    padding: 10px 0;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #101010;
+}
+.nav-list li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101010;
+}
+.nav-list a:hover{
+    color: #2962FF;
+}
+.nav-button{
+    display: flex;
+    gap: 16px;
+}
+.btn-masuk{
+    width: 140px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2962FF;
+    border: 2px solid #2962FF;
+    border-radius: 8px;
+    background-color: #F6F8FD;
+    cursor: pointer;
+}
+.btn-masuk:hover{
+    color: #FFFFFF;
+    background-color: #2962FF;
+    transition: all 0.2s;
+    filter: drop-shadow(2px 2px 3px #2962ff);
+}
+.btn-daftar{
+    width: 140px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    border: 2px solid #2962FF;
+    border-radius: 8px;
+    background-color: #2962FF;
+    cursor: pointer;
+}
+.btn-daftar:hover{
+    transition: all 0.2s;
+    filter: drop-shadow(2px 2px 3px #2962ff);
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+.banner-content{
+    width: 476px;
+}
+.banner-content h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #2962FF;
+    margin: 0 0 8px 0;
+}
+.banner-content p{
+    width: 390px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    margin: 0 0 32px 0;
+}
+.btn-selengkapnya{
+    width: 216px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    background-color: #2962FF;
+    cursor: pointer;
+}
+.btn-selengkapnya:hover{
+    outline: 3px solid #82B1FF;
+    transition: all 0.2s;
+}
+.banner-img{
+ display: flex;
+ align-items: flex-start;
+}
+.img-total-kelas{
+    margin-top: 20px;
+    margin-right: -150px;
+    position: relative;
+}
+.img-total-mentor{
+    margin-top: 376px;
+    margin-left: -155px;
+    position: relative;
+}
+
+.statistik{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+    padding-top: 72px;
+    padding-bottom: 50px;
+}
+.divider{
+    width: 4px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+}
+.statistik h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 0 8px 0;
+    color: #2962FF;
+}
+.statistik p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    color: #101010;
+}
+.why-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.img-why-us{
+    width: 457px;
+}
+.why-us .row{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.why-us h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 24px 0;
+}
+.why-us .card{
+    width: 320px;
+    height: 180px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 3px 4px 15px rgba(245, 245, 245, 0.8);
+}
+.why-us .card-content{
+    padding: 16px;
+}
+.card-content .content-header{
+    display: flex;
+    align-items: center;
+}
+.card-content .content-header h5{
+    margin: 0 0 0 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #101010;
+
+}
+.card-content .content-main p{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 16px;
+    color: rgba(16, 16, 16, 0.65);
+}
+
+.kategori{
+    padding: 50px 0;
+}
+.kategori h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 32px 0;
+}
+.kategori .row{
+    display: flex;
+    gap: 16px;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.kategori .card{
+    width: 272px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 15px rgba(245, 245, 245, 0.8);
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+.kategori .card a{
+    text-decoration: none;
+}
+.kategori .card:hover{
+    box-shadow: 3px 4px 15px rgba(16, 16, 16, 0.45);
+    transition: all 0.2s;
+}
+.kategori .card-content{
+    padding: 16px;
+}
+.kategori .card-main{
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kategori .card-main h4{
+    margin: 4px 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #101010;
+
+}
+.kategori .card-main p{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(16, 16, 16, 0.65);
+}
+.kelas h3{
+    width: 254px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 32px 0;
+}
+.kelas{
+    padding: 50px 0;
+}
+.kelas .row{
+    display: flex;
+}
+.kelas .card{
+    width: 272px;
+    height: 360px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 15px rgba(245, 245, 245, 0.8);
+    border-radius: 16px;
+    cursor: pointer;
+}
+.kelas .card:hover{
+    box-shadow: 3px 4px 15px rgba(16, 16, 16, 0.45);
+    transition: all 0.2s;
+}
+.kelas .card-content{
+    padding: 16px;
+}
+.kelas a{
+    text-decoration: none;
+}
+.kelas h4{
+    margin: 20px 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #101010;
+    height: 48px;
+}
+.kelas p{
+    margin: 8px 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(16, 16, 16, 0.65);
+}
+.kelas .discount{
+    display: flex;
+    gap: 8px;
+}
+.kelas .review{
+    display: flex;
+}
+.bootcamp{
+    padding: 50px 0;
+}
+.bootcamp h3{
+    width: 254px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 32px 0;
+}
+.bootcamp .row{
+    display: flex;
+}
+.bootcamp .card{
+    width: 272px;
+    height: 360px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 15px rgba(245, 245, 245, 0.8);
+    border-radius: 16px;
+    cursor: pointer;
+}
+.bootcamp .card:hover{
+    box-shadow: 3px 4px 15px rgba(16, 16, 16, 0.45);
+    transition: all 0.2s;
+}
+.bootcamp .card-content{
+    padding: 16px;
+}
+.bootcamp a{
+    text-decoration: none;
+}
+.bootcamp h4{
+    margin: 20px 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #101010;
+    height: 48px;
+}
+.bootcamp p{
+    margin: 8px 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(16, 16, 16, 0.65);
+}
+.bootcamp .discount{
+    display: flex;
+    gap: 8px;
+}
+.bootcamp .review{
+    display: flex;
+}
+.testimonial-section{
+    width: 100%;
+    background-color: #82B1FF;
+    margin: 50px 0;
+}
+.testimonial-section .container{
+    padding: 87px 0;
+}
+.testimonial .row{
+    display: flex;
+}
+.testimonial .main-content{
+    display: flex;
+    gap: 85px;
+}
+.testimonial h3{
+    width: 225px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 0 32px;
+}
+.testimonial h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 87px;
+    margin: 0;
+    color: #101010;
+}
+.testimonial p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    width: 407px;
+    margin: 0;
+    padding: 32px 8px 0 8px;
+    color: #101010;
+}
+.testimonial h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #101010;
+    margin: 0;
+}
+.rating{
+    margin-top: 48px;
+}
+.testimonial .petik-kanan{
+    margin-top: 140px;
+}
+.testimonial .rating p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    padding: 4px 0 0 0;
+    color: rgba(16, 16, 16, 0.65);
+}
+.btn-slide{
+    width: 64px;
+    height: 64px;
+    background: #2962FF;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn-slide:hover{
+    transition: all 0.2s;
+    filter: drop-shadow(2px 2px 3px #2962ff);
+}
+.join{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.join .join-content{
+    max-width: 482px;
+}
+.join h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #2962FF;
+    margin: 0 0 24px 0;
+}
+.join p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 325px;
+    color: #101010;
+    margin-bottom: 32px;
+}
+.join .btn-join{
+    width: 191px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #2962FF;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.join .btn-join:hover{
+    outline: 3px solid #82B1FF;
+    transition: all 0.2s;
+}
+.footer-section{
+    background-color: #2962FF;
+    margin-top: 50px;
+}
+.footer{
+    padding: 40px 0;
+}
+.footer .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.footer .brand{
+    width: 272px
+}
+.footer a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 8px 0 0 0;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 8px 0 0 0;
+    color: #FFFFFF;
+    
+}
+.footer h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 24px 0;
+    color: #FFFFFF;
+
+}
+.footer .copyright{
+    padding-top: 72px;
+    text-align: center;
+}
+@media only screen and (min-width: 1201px){
+    .container{
+        max-width: 1140px;
+        margin: auto;
+        padding: auto;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    .container{
+        max-width: 960px;
+        margin: auto;
+        padding: auto;
+    }
+    .img-total-kelas{
+        margin-top: 16px;
+        margin-right: -124px;
+        width: 185px;
+    }
+    .img-total-mentor{
+        margin-top: 261px;
+        margin-left: -124px;
+        width: 185px;
+    }
+    .img-hero{
+        width: 340px;
+    }
+    .img-why-us{
+        width: 366px;
+    }
+    .why-us .card{
+        width: 256px;
+        height: 180px;
+    }
+    .img-testimonial-1{
+        width: 288px;
+    }
+    .testimonial .main-content{
+        display: flex;
+        gap: 68px;
+        align-items: center;
+    }
+    .testimonial p{
+        width: 326px;
+    }
+    .rating{
+        margin-top: 32px;
+    }
+    .img-join{
+        width: 366px;
+    }
+}
+@media only screen and (min-width: 739px) and (max-width: 992px){
+    .container{
+        max-width: 720px;
+        margin: auto;
+        padding: auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-section .nav-button{
+        display: none;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        width: 30px;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #2962ff;
+        margin: 6px auto;
+    }
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
+    }
+    .img-total-kelas{
+        width: 139px;
+        margin-top: 12px;
+        margin-right: -90px;
+        position: relative;
+    }
+    .img-total-mentor{
+        width: 139px;
+        margin-top: 225px;
+        margin-left: -93px;
+        position: relative;
+    }
+    .img-hero{
+        width: 288px;
+    }
+    .banner-content{
+        width: 285px;
+    }
+    .banner-content h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2962FF;
+        margin: 0 0 8px 0;
+    }
+    .banner-content p{
+        width: 234px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #101010;
+        margin: 0 0 32px 0;
+    }
+    .btn-selengkapnya{
+        width: 140px;
+        height: 36px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        background-color: #2962FF;
+        cursor: pointer;
+    }
+    .statistik{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 34px;
+        padding-top: 72px;
+        padding-bottom: 50px;
+    }
+    .divider{
+        height: 40px;
+    }
+    .statistik h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 8px 0;
+        color: #2962FF;
+    }
+    .statistik p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        color: #101010;
+    }
+    .img-why-us{
+        width: 366px;
+    }
+    .why-us{
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .testimonial .main-content{
+        align-items: center;
+    }
+    .img-testimonial-1{
+        width: 216px;
+    }
+    .testimonial .main-content{
+        gap: 51px;
+    }
+    .testimonial p{
+        width: 244px;
+    }
+    .testimonial h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 64px;
+        margin: 0;
+        color: #101010;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 224px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+        height: 48px;
+    }
+    .testimonial .btn-slide img{
+        width: 20px;
+    }
+    .testimonial h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .testimonial .rating p{
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 4px;
+    }
+    .rating{
+        margin-top: 16px;
+    }
+    .rating img{
+        width: 120px;
+    }
+    .img-join{
+        width: 366px;
+    }
+    .join{
+        flex-direction: column-reverse;
+        row-gap: 32px;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 738px){
+    .container{
+        max-width: 540px;
+        margin: auto;
+        padding: auto;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #2962ff;
+        margin: 6px auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .img-total-kelas{
+        width: 93px;
+        margin-top: 8px;
+        margin-right: -60px;
+        position: relative;
+    }
+    .img-total-mentor{
+        width: 93px;
+        margin-top: 150px;
+        margin-left: -62px;
+        position: relative;
+    }
+    .img-hero{
+        width: 192px;
+    }
+    .banner-content{
+        width: 240px;
+    }
+    .banner-content h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2962FF;
+        margin: 0 0 8px 0;
+    }
+    .banner-content p{
+        width: 240px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        color: #101010;
+        margin: 0 0 32px 0;
+    }
+    .btn-selengkapnya{
+        width: 140px;
+        height: 36px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        background-color: #2962FF;
+        cursor: pointer;
+    }
+    .statistik{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+        padding-top: 72px;
+        padding-bottom: 50px;
+    }
+    .divider{
+        height: 32px;
+    }
+    .statistik h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 8px 0;
+        color: #2962FF;
+    }
+    .statistik p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        color: #101010;
+    }
+    .img-why-us{
+        width: 288px;
+    }
+    .why-us{
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .why-us .card{
+        width: 256px;
+        height: 200px;
+    }
+    .testimonial .main-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 34px;
+    }
+    .testimonial p{
+        width: 356px;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 140px;
+    }
+    .rating{
+        margin-top: 24px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+    }
+    .img-join{
+        width: 288px;
+    }
+    .join{
+        flex-direction: column-reverse;
+        row-gap: 32px;
+    }
+}
+@media only screen  and (min-width: 451px) and (max-width: 576px) {
+    .container{
+        max-width: 420px;
+        margin: auto;
+        padding: auto;  
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #2962ff;
+        margin: 6px auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .img-total-kelas{
+        width: 139px;
+        margin-top: 12px;
+        margin-right: -90px;
+        position: relative;
+    }
+    .img-total-mentor{
+        width: 139px;
+        margin-top: 225px;
+        margin-left: -93px;
+        position: relative;
+    }
+    .img-hero{
+        width: 288px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2962FF;
+        margin: 0 0 8px 0;
+    }
+    .banner-content p{
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #101010;
+        margin: 0 0 32px 0;
+    }
+    .btn-selengkapnya{
+        width: 216px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        background-color: #2962FF;
+        cursor: pointer;
+    }
+    .statistik{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+        padding-top: 72px;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    .divider{
+        height: 32px;
+    }
+    .statistik h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 8px 0;
+        color: #2962FF;
+    }
+    .statistik p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        color: #101010;
+    }
+    .img-why-us{
+        display: none;
+    }
+    .why-us .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-us .card{
+        width: 320px;
+        height: 180px;
+    }
+    .testimonial .main-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .img-testimonial-1{
+        width: 216px;
+    }
+    .testimonial p{
+        width: 244px;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 216px;
+    }
+    .rating{
+        margin-top: 24px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+    }
+    .testimonial .btn-slide{
+        width: 32px;
+        height: 64px;
+    }
+    .testimonial .btn-slide img{
+        width: 16px;
+    }
+    .img-join{
+        display: none;
+    }
+}
+@media only screen and (min-width: 355px) and (max-width: 450px){
+    .container{
+        max-width: 320px;
+        margin: auto;
+        padding: auto;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #2962ff;
+        margin: 6px auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .img-total-kelas{
+        width: 116px;
+        margin-top: 10px;
+        margin-right: -75px;
+        position: relative;
+    }
+    .img-total-mentor{
+        width: 116px;
+        margin-top: 188px;
+        margin-left: -78px;
+        position: relative;
+    }
+    .img-hero{
+        width: 240px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2962FF;
+        margin: 0 0 8px 0;
+    }
+    .banner-content p{
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #101010;
+        margin: 0 0 32px 0;
+    }
+    .btn-selengkapnya{
+        width: 216px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        background-color: #2962FF;
+        cursor: pointer;
+    }
+    .statistik{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 23px;
+        padding-top: 72px;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    .divider{
+        height: 32px;
+    }
+    .statistik h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 8px 0;
+        color: #2962FF;
+    }
+    .statistik p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        color: #101010;
+    }
+    .why-us .card{
+        width: 256px;
+        height: 200px;
+    }
+    .why-us h3{
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.73px;
+        color: #2962FF;
+        margin: 0 0 24px 0;
+    }
+    .img-why-us{
+        display: none;
+    }
+    .why-us .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-us .card{
+        width: 320px;
+        height: 180px;
+    }
+    .testimonial .main-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .img-testimonial-1{
+        width: 216px;
+    }
+    .testimonial p{
+        width: 244px;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 216px;
+    }
+    .rating{
+        margin-top: 24px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+    }
+    .testimonial .btn-slide{
+        width: 32px;
+        height: 64px;
+    }
+    .testimonial .btn-slide img{
+        width: 16px;
+    }
+    .testimonial p{
+        font-size: 16px;
+        width: 156px;
+    }
+    .testimonial h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        margin: 0;
+        color: #101010;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 296px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+        height: 48px;
+    }
+    .testimonial .btn-slide img{
+        width: 20px;
+    }
+    .testimonial h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .testimonial .rating p{
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 4px;
+    }
+    .rating{
+        margin-top: 16px;
+    }
+    .rating img{
+        width: 120px;
+    }
+    .img-join{
+        display: none;
+    }
+}
+@media only screen and (max-width: 354px){
+    .container{
+        max-width: 290px;
+        margin: auto;
+        padding: auto;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #2962ff;
+        margin: 6px auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .img-total-kelas{
+        width: 92px;
+        margin-top: 8px;
+        margin-right: -62px;
+        position: relative;
+    }
+    .img-total-mentor{
+        width: 92px;
+        margin-top: 150px;
+        margin-left: -62px;
+        position: relative;
+    }
+    .img-hero{
+        width: 188px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #2962FF;
+        margin: 0 0 8px 0;
+    }
+    .banner-content p{
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #101010;
+        margin: 0 0 32px 0;
+    }
+    .btn-selengkapnya{
+        width: 180px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        background-color: #2962FF;
+        cursor: pointer;
+    }
+    .statistik{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 23px;
+        padding-top: 72px;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+    }
+    .divider{
+        height: 32px;
+    }
+    .statistik h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 8px 0;
+        color: #2962FF;
+    }
+    .statistik p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        color: #101010;
+    }
+    .img-why-us{
+        display: none;
+    }
+    .why-us .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-us .card{
+        width: 288px;
+        height: 200px;
+    }
+    .testimonial .main-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .img-testimonial-1{
+        width: 216px;
+    }
+    .testimonial p{
+        width: 244px;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 216px;
+    }
+    .rating{
+        margin-top: 24px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+    }
+    .testimonial .btn-slide{
+        width: 32px;
+        height: 64px;
+    }
+    .testimonial .btn-slide img{
+        width: 16px;
+    }
+    .testimonial p{
+        font-size: 16px;
+        width: 156px;
+    }
+    .testimonial h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        margin: 0;
+        color: #101010;
+    }
+    .testimonial .petik-kanan{
+        margin-top: 296px;
+    }
+    .testimonial .btn-slide{
+        width: 48px;
+        height: 48px;
+    }
+    .testimonial .btn-slide img{
+        width: 20px;
+    }
+    .testimonial h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .testimonial .rating p{
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 4px;
+    }
+    .rating{
+        margin-top: 16px;
+    }
+    .rating img{
+        width: 120px;
+    }
+    .img-join{
+        display: none;
+    }
+}
