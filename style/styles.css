@@ -699,8 +699,15 @@ header.sticky .btn-masuk:hover{
     .nav-list{
         display: none;
     }
-    .nav-section .nav-button{
+    .nav-button{
         display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
     }
     .nav-section .container{
         display: flex;
@@ -881,9 +888,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -891,11 +923,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .img-total-kelas{
         width: 93px;
@@ -1019,9 +1055,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;  
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -1029,11 +1090,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .banner{
         flex-direction: column-reverse;
@@ -1169,9 +1234,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -1179,11 +1269,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .banner{
         flex-direction: column-reverse;
@@ -1371,9 +1465,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -1381,11 +1500,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .banner{
         flex-direction: column-reverse;

@@ -45,6 +45,7 @@ header.sticky .btn-masuk:hover{
 }
 .hamburger{
     display: none;
+    padding: 10px 0;
 }
 .nav-menu{
     display: flex;
@@ -316,9 +317,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -326,11 +352,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
 }
 @media only screen and (min-width: 577px) and (max-width: 738px){
@@ -339,9 +369,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -349,11 +404,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
 }
 @media only screen  and (min-width: 451px) and (max-width: 576px) {
@@ -362,9 +421,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;  
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -372,11 +456,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .filter{
         justify-content: center;
@@ -388,9 +476,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -398,11 +511,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .title h1{
         text-align: center;
@@ -427,9 +544,34 @@ header.sticky .btn-masuk:hover{
         margin: auto;
         padding: auto;
     }
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-section.active .nav-list{
+        display: block;
+    }
+    .nav-section.active .nav-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-section.active{
+        background-color: #FFFFFF;
+    }
+    .nav-section.active .btn-masuk{
+        background-color: #FFFFFF;
+    }
     .hamburger{
         display: block;
         cursor: pointer;
+        width: 30px;
     }
     .hamburger .line{
         width: 30px;
@@ -437,11 +579,15 @@ header.sticky .btn-masuk:hover{
         background: #2962ff;
         margin: 6px auto;
     }
-    .nav-list{
-        display: none;
+    .nav-section.active .navbar{
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .nav-button{
-        display: none;
+    .nav-section.active .nav-list ul{
+        flex-direction: column;
+    }
+    .nav-section.active .nav-button{
+        flex-direction: column;
     }
     .filter{
         justify-content: center;
